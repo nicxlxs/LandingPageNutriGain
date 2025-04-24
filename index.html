@@ -8,23 +8,39 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
-          <ul class="nav-left">
-            <li><a href="#about">About the app</a></li>
-            <li class="dropdown">
-              <a href="#paths">Paths</a>
-            </li>
-            <li><a href="#pricing">Pricing</a></li>
-          </ul>
-          <div class="logo">
-            <img src="assets/logo.png" alt="NutriGain logo">
-          </div>
-          <ul class="nav-right">
-            <li><a href="#team">About us</a></li>
-            <li><a href="#login">Log In</a></li>
-    <li id="lang-toggle">
-</li>
-          </ul>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="assets/logo.png" alt="NutriGain logo" />
+        </div>
+      
+        <ul class="nav-left desktop-menu">
+          <li><a href="#about">About the app</a></li>
+          <li><a href="#paths">Paths</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#team">Team</a></li>
+        </ul>
+      
+        <ul class="nav-right desktop-menu">
+          <li><a href="#team">About us</a></li>
+          <li><a href="#login">Log In</a></li>
+          <li id="lang-toggle"></li>
+        </ul>
+      
+        <div id="menu-toggle" class="menu-toggle">☰</div>
+      </nav>
+      
+      <div class="mobile-menu">
+        <ul>
+          <li><a href="#about">About the app</a></li>
+          <li><a href="#paths">Paths</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#team">About us</a></li>
+          <li><a href="#login">Log In</a></li>
+          <li id="lang-toggle-mobile"></li>
+        </ul>
+      </div>
+      
+
         </nav>
     </header>
 
@@ -200,19 +216,23 @@
   </section>
   
 
-  <footer class="footer-section fade-in-up delay-4">
+  
+<footer class="footer-section fade-in-up delay-4">
+  <div class="footer-column logo-column">
     <img src="assets/logo.png" alt="NutriGain Logo" class="footer-logo" />
-    
-    <div class="footer-content">
-      <p>© 2025 NutriGain. All rights reserved.</p>
-    </div>
-    
-    <div class="footer-social">
-      <a href="#"><img src="assets/youtube.png" alt="YouTube" /></a>
-      <a href="#"><img src="assets/instagram1.png" alt="Instagram" /></a>
-      <a href="#"><img src="assets/facebook1.png" alt="Facebook" /></a>
-    </div>
-  </footer>
+  </div>
+
+  <div class="footer-column center-column">
+    <p>© 2025 NutriGain. All rights reserved.</p>
+  </div>
+
+  <div class="footer-column social-column">
+    <a href="#"><img src="assets/youtube.png" alt="YouTube" /></a>
+    <a href="#"><img src="assets/instagram1.png" alt="Instagram" /></a>
+    <a href="#"><img src="assets/facebook1.png" alt="Facebook" /></a>
+  </div>
+</footer>
+
    
   
   <script src="script.js"></script>

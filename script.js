@@ -179,3 +179,29 @@ window.addEventListener('DOMContentLoaded', () => {
     langToggle.textContent = currentLang === "en" ? "ES" : "EN";
   }
 });
+
+let lastScrollTop = 0;
+const navbar = document.querySelector("header");
+
+window.addEventListener("scroll", function () {
+  const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+  if (currentScroll > lastScrollTop) {
+    // Scroll hacia abajo -> ocultar navbar
+    navbar.style.top = "-100px";
+  } else {
+    // Scroll hacia arriba -> mostrar navbar
+    navbar.style.top = "0";
+  }
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Para evitar valores negativos
+});
+
+
+// Menú hamburguesa para móviles
+document.getElementById("menu-toggle").addEventListener("click", () => {
+  document.querySelector(".navbar").classList.toggle("open");
+});
+
+// Sincronizar botón de idioma en mobile
+document.getElementById("lang-toggle-mobile").addEventListener("click", () => {
+  document.getElementById("lang-toggle").click();
+});
