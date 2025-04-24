@@ -1,3 +1,4 @@
+
 :root { 
   --green: #a7f3d0;
   --yellow: #fde68a;
@@ -665,4 +666,55 @@ section.fade-in-up.appear {
 #lang-toggle:hover {
   background-color: #86efac;
   transform: scale(1.05);
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-left, .nav-right {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    padding-left: 1rem;
+  }
+
+  .nav-left li a,
+  .nav-right li a {
+    font-size: 0.9rem;
+  }
+
+  .logo img {
+    height: 48px;
+  }
+
+  .get-started {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  .hero-content, .features, .pricing, .team {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-content img, .feature-icon, .avatar {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
 }
